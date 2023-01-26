@@ -3,7 +3,7 @@ import socket
 def main():
     #create a TCP socket
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    host = '192.168.220.128'
+    host = '192.168.220.129'
     port = 8889
 
     #connect to the server
