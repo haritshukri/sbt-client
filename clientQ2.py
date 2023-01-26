@@ -3,9 +3,11 @@ import socket
 def main():
     #create a TCP socket
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    host = '192.168.220.128'
+    port = 8889
 
     #connect to the server
-    client_socket.connect(('localhost', 1234))
+    client_socket.connect((host, port))
 
     #get temperature in Fahrenheit from the user
     fahrenheit = input("Enter temperature in Fahrenheit: ")
@@ -20,5 +22,5 @@ def main():
     #close socket
     client_socket.close()
 
-if name == 'main':
-    main()
+if __name__ == '__main__':
+   main()
